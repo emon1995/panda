@@ -52,6 +52,60 @@ html {
   font-weight: 500;
 }
 
+/* CAROUSEL STYLES */
+.carousel {
+  /* background-image: url("../images/banner-images/tv.png");
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--primary-bg);
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  height: 700px;
+  border-radius: 20px;
+}
+
+.carousel-details {
+  padding: 68px;
+}
+
+.carousel-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #1f1f1f;
+}
+
+.carousel-subtitle {
+  color: #4e4e4e;
+}
+
+.carousel-price {
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #ff136f;
+}
+
+.buy-btn {
+  background: linear-gradient(180deg, #ff589b -0.01%, #ff136f 99.99%);
+  padding: 16px 28px;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.carousel-img {
+  margin-left: 270px;
+}
+
+.carousel-img img {
+  width: 100%;
+}
+
 /* RESPONSIVE MOBILE STYLES  */
 @media only screen and (max-width: 576px) {
   /* NAVBAR STYLES */
@@ -61,6 +115,16 @@ html {
   }
   .menu-items {
     flex-direction: column;
+  }
+  /* CAROUSEL STYLES */
+  .carousel {
+    flex-direction: column;
+  }
+  .carousel-title {
+    font-size: 2.5rem;
+  }
+  .carousel-img {
+    margin-left: 0;
   }
 }
 
@@ -73,5 +137,17 @@ html {
   }
   .menu-items {
     flex-direction: column;
+  }
+  /* CAROUSEL STYLES     */
+  .carousel {
+    flex-direction: column;
+    gap: 0;
+  }
+  .carousel-img {
+    margin-bottom: 1390px;
+  }
+  .carousel-img img {
+    object-fit: cover;
+    width: 50%;
   }
 }
