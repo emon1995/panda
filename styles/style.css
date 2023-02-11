@@ -282,6 +282,7 @@ html {
   border-radius: 0 5px 5px 0;
   margin-left: -10px;
   cursor: pointer;
+  height: 53px;
 }
 
 /* RESPONSIVE MOBILE STYLES  */
