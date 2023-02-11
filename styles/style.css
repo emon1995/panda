@@ -10,7 +10,7 @@ html {
 
 /* basic color setup */
 :root {
-  --primary-color: "linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%)";
+  --primary-color: linear-gradient(180deg, #ff589b -0.01%, #ff136f 99.99%);
   --primary-bg: #feeae9;
   --yellow-color: linear-gradient(152.07deg, #ff9c35 1.47%, #ffd019 97.17%);
   --pink-bg: linear-gradient(180deg, #ff589b -0.01%, #ff136f 99.99%);
@@ -106,6 +106,53 @@ html {
   width: 100%;
 }
 
+/* CATEGORIES STYLES */
+.categories {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #1f1f1f;
+  margin-bottom: 24px;
+}
+
+.categories-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+}
+
+.item1 {
+  background: var(--yellow-color);
+}
+.item2 {
+  background: var(--pink-bg);
+}
+.item3 {
+  background: var(--blue-bg);
+}
+.categories-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px 48px;
+  width: 100%;
+}
+
+.categories-title {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--white-bg);
+}
+
 /* RESPONSIVE MOBILE STYLES  */
 @media only screen and (max-width: 576px) {
   /* NAVBAR STYLES */
@@ -125,6 +172,14 @@ html {
   }
   .carousel-img {
     margin-left: 0;
+  }
+  /* CATEGORIES STYLES */
+  .categories {
+    margin-top: 250px;
+    padding: 10px;
+  }
+  .categories-items {
+    flex-direction: column;
   }
 }
 
@@ -149,5 +204,12 @@ html {
   .carousel-img img {
     object-fit: cover;
     width: 50%;
+  }
+  /* CATEGORIES STYLES */
+  .categories {
+    padding: 10px;
+  }
+  .categories-items {
+    flex-wrap: wrap;
   }
 }
