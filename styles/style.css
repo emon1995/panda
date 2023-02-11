@@ -201,6 +201,7 @@ html {
 
 .shoes-item img {
   width: 100%;
+  max-width: 500px;
 }
 
 .shoes-item-title {
