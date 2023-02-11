@@ -1,0 +1,20 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* basic color setup */
+:root {
+  --primary-color: "linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%)";
+  --primary-bg: #feeae9;
+  --yellow-color: linear-gradient(152.07deg, #ff9c35 1.47%, #ffd019 97.17%);
+  --pink-bg: linear-gradient(180deg, #ff589b -0.01%, #ff136f 99.99%);
+  --blue-bg: linear-gradient(170.41deg, #4289ff -10.89%, #3f07f8 92.77%);
+  --white-bg: #ffffff;
+  --gray-bg: #f4f4f4;
+}
